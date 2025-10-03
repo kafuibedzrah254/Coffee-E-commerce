@@ -22,12 +22,14 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 ftco-animate">
+            
 			<form method="POST" action="{{ route('register') }}" class="billing-form ftco-bg-dark p-3 p-md-5">
+                @csrf
 				<h3 class="mb-4 billing-heading">Register</h3>
 	          	<div class="row align-items-end">
                  <div class="col-md-12">
                         <div class="form-group">
-                            <label for="Username">Username</label>
+                            <label for="Username">Name</label>
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
@@ -62,11 +64,31 @@
                                 @enderror
 	                </div>
 
+
+                    
+
                 </div>
+
+                <div class="col-md-12">
+	                <div class="form-group">
+	                	<label for="Password">Confirm Password</label>
+                                <input id="password_confirmation" type="password" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
+
+                                @error('password_confirmation')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+
+
+                    
+
+                </div>
+
                 <div class="col-md-12">
                 	<div class="form-group mt-4">
 							<div class="radio">
-                                <button class="btn btn-primary py-3 px-4">Register</button>
+                                <button type="submit" name="submit" class="btn btn-primary py-3 px-4">Register</button>
 						    </div>
 					</div>
                 </div>
