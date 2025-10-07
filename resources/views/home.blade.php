@@ -224,19 +224,61 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="menu-entry">
-                    <a href="#" class="img" style="background-image: url(images/menu-1.jpg);"></a>
+                    <a href="#" class="img" style="background-image: url({{ asset('assets/images/menu-1.jpg') }});"></a>
                     <div class="text text-center pt-4" style="color: #000 !important; background: #f8f9fa !important; padding: 15px;">
                         <h3><a href="#" style="color: #000 !important;">Coffee Capuccino</a></h3>
                         <p style="color: #000 !important;">A small river named Duden flows by their place and supplies</p>
-                        <p class="price"><span>$5.90</span></p>
+                        <p class="price" style="color: #000 !important; font-size: 18px !important; font-weight: bold !important;">
+                            <span style="color: #000 !important;">$5.90</span>
+                        </p>
                         <p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+			<div class="col-md-3">
+                <div class="menu-entry">
+                    <a href="#" class="img" style="background-image: url({{ asset('assets/images/menu-2.jpg') }});"></a>
+                    <div class="text text-center pt-4" style="color: #000 !important; background: #f8f9fa !important; padding: 15px;">
+                        <h3><a href="#" style="color: #000 !important;">Coffee Espresso</a></h3>
+                        <p style="color: #000 !important;">A small river named Duden flows by their place and supplies</p>
+                        <p class="price" style="color: #000 !important; font-size: 18px !important; font-weight: bold !important;">
+                            <span style="color: #000 !important;">$4.90</span>
+                        </p>
+                        <p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-3">
+				<div class="menu-entry">
+					<a href="#" class="img" style="background-image: url({{ asset('assets/images/menu-3.jpg') }});"></a>
+					<div class="text text-center pt-4" style="color: #000 !important; background: #f8f9fa !important; padding: 15px;">
+						<h3><a href="#" style="color: #000 !important;">Coffee Latte</a></h3>
+						<p style="color: #000 !important;">A small river named Duden flows by their place and supplies</p>
+						<p class="price" style="color: #000 !important; font-size: 18px !important; font-weight: bold !important;">
+							<span style="color: #000 !important;">$6.90</span>
+						</p>
+						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="menu-entry">
+					<a href="#" class="img" style="background-image: url({{ asset('assets/images/menu-4.jpg') }});"></a>
+					<div class="text text-center pt-4" style="color: #000 !important; background: #f8f9fa !important; padding: 15px;">
+						<h3><a href="#" style="color: #000 !important;">Coffee Americano</a></h3>
+						<p style="color: #000 !important;">A small river named Duden flows by their place and supplies</p>
+						<p class="price" style="color: #000 !important; font-size: 18px !important; font-weight: bold !important;">
+							<span style="color: #000 !important;">$7.90</span>
+						</p>
+						<p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
+					</div>
+				</div>
+		</div>
+	</div>
 </section>
-    <section class="ftco-gallery">
+
+<section class="ftco-gallery">
     	<div class="container-wrap">
     		<div class="row no-gutters">
 					<div class="col-md-3 ftco-animate">
